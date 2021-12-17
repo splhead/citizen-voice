@@ -14,6 +14,8 @@
 		DC22225C276CC2C800360E52 /* CitzenVoice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC22225A276CC2C800360E52 /* CitzenVoice.xcdatamodeld */; };
 		DC22225E276CC2CD00360E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC22225D276CC2CD00360E52 /* Assets.xcassets */; };
 		DC222261276CC2CD00360E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22225F276CC2CD00360E52 /* LaunchScreen.storyboard */; };
+		DC222269276CC47300360E52 /* TroublesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC222268276CC47300360E52 /* TroublesTableViewController.swift */; };
+		DCC440DD276CDAE2002902A9 /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC440DC276CDAE2002902A9 /* UIViewController+Context.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DC22225D276CC2CD00360E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC222260276CC2CD00360E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC222262276CC2CD00360E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC222268276CC47300360E52 /* TroublesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TroublesTableViewController.swift; sourceTree = "<group>"; };
+		DCC440DC276CDAE2002902A9 /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,13 @@
 				DC222251276CC2C800360E52 /* AppDelegate.swift */,
 				DC222253276CC2C800360E52 /* SceneDelegate.swift */,
 				DC222255276CC2C800360E52 /* ViewController.swift */,
+				DC222268276CC47300360E52 /* TroublesTableViewController.swift */,
 				DC222257276CC2C800360E52 /* Main.storyboard */,
 				DC22225D276CC2CD00360E52 /* Assets.xcassets */,
 				DC22225F276CC2CD00360E52 /* LaunchScreen.storyboard */,
 				DC222262276CC2CD00360E52 /* Info.plist */,
 				DC22225A276CC2C800360E52 /* CitzenVoice.xcdatamodeld */,
+				DCC440DC276CDAE2002902A9 /* UIViewController+Context.swift */,
 			);
 			path = CitzenVoice;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC222256276CC2C800360E52 /* ViewController.swift in Sources */,
+				DC222269276CC47300360E52 /* TroublesTableViewController.swift in Sources */,
+				DCC440DD276CDAE2002902A9 /* UIViewController+Context.swift in Sources */,
 				DC222252276CC2C800360E52 /* AppDelegate.swift in Sources */,
 				DC222254276CC2C800360E52 /* SceneDelegate.swift in Sources */,
 				DC22225C276CC2C800360E52 /* CitzenVoice.xcdatamodeld in Sources */,
