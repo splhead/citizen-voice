@@ -52,7 +52,9 @@ class TroublesTableViewController: UITableViewController {
                 
 
         // Configure the cell...
-        let trouble = fetchedResultsController.object(at: <#T##IndexPath#>)
+        let trouble = fetchedResultsController.object(at: indexPath)
+        cell.textLabel?.text = trouble.name
+        cell.detailTextLabel?.text = trouble.createdAt?.description
         
         return cell
     }
