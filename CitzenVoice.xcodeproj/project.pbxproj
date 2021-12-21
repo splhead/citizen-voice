@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		DC222252276CC2C800360E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC222251276CC2C800360E52 /* AppDelegate.swift */; };
 		DC222254276CC2C800360E52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC222253276CC2C800360E52 /* SceneDelegate.swift */; };
-		DC222256276CC2C800360E52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC222255276CC2C800360E52 /* ViewController.swift */; };
+		DC222256276CC2C800360E52 /* TroubleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC222255276CC2C800360E52 /* TroubleViewController.swift */; };
 		DC222259276CC2C800360E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC222257276CC2C800360E52 /* Main.storyboard */; };
 		DC22225C276CC2C800360E52 /* CitzenVoice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC22225A276CC2C800360E52 /* CitzenVoice.xcdatamodeld */; };
 		DC22225E276CC2CD00360E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC22225D276CC2CD00360E52 /* Assets.xcassets */; };
 		DC222261276CC2CD00360E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22225F276CC2CD00360E52 /* LaunchScreen.storyboard */; };
 		DC222269276CC47300360E52 /* TroublesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC222268276CC47300360E52 /* TroublesTableViewController.swift */; };
+		DCB5973C27713A61001B82BD /* TroubleFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB5973B27713A61001B82BD /* TroubleFormViewController.swift */; };
 		DCC440DD276CDAE2002902A9 /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC440DC276CDAE2002902A9 /* UIViewController+Context.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +23,14 @@
 		DC22224E276CC2C800360E52 /* CitzenVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitzenVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC222251276CC2C800360E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC222253276CC2C800360E52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC222255276CC2C800360E52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC222255276CC2C800360E52 /* TroubleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TroubleViewController.swift; sourceTree = "<group>"; };
 		DC222258276CC2C800360E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC22225B276CC2C800360E52 /* CitzenVoice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CitzenVoice.xcdatamodel; sourceTree = "<group>"; };
 		DC22225D276CC2CD00360E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC222260276CC2CD00360E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC222262276CC2CD00360E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC222268276CC47300360E52 /* TroublesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TroublesTableViewController.swift; sourceTree = "<group>"; };
+		DCB5973B27713A61001B82BD /* TroubleFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TroubleFormViewController.swift; sourceTree = "<group>"; };
 		DCC440DC276CDAE2002902A9 /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,8 +66,9 @@
 			children = (
 				DC222251276CC2C800360E52 /* AppDelegate.swift */,
 				DC222253276CC2C800360E52 /* SceneDelegate.swift */,
-				DC222255276CC2C800360E52 /* ViewController.swift */,
+				DC222255276CC2C800360E52 /* TroubleViewController.swift */,
 				DC222268276CC47300360E52 /* TroublesTableViewController.swift */,
+				DCB5973B27713A61001B82BD /* TroubleFormViewController.swift */,
 				DC222257276CC2C800360E52 /* Main.storyboard */,
 				DC22225D276CC2CD00360E52 /* Assets.xcassets */,
 				DC22225F276CC2CD00360E52 /* LaunchScreen.storyboard */,
@@ -147,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC222256276CC2C800360E52 /* ViewController.swift in Sources */,
+				DCB5973C27713A61001B82BD /* TroubleFormViewController.swift in Sources */,
+				DC222256276CC2C800360E52 /* TroubleViewController.swift in Sources */,
 				DC222269276CC47300360E52 /* TroublesTableViewController.swift in Sources */,
 				DCC440DD276CDAE2002902A9 /* UIViewController+Context.swift in Sources */,
 				DC222252276CC2C800360E52 /* AppDelegate.swift in Sources */,
