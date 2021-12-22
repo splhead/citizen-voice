@@ -55,12 +55,20 @@ class TroublesTableViewController: UITableViewController {
         // Configure the cell...
         let trouble = fetchedResultsController.object(at: indexPath)
         cell.textLabel?.text = trouble.name
-        cell.detailTextLabel?.text = trouble.createdAt?.description
+        cell.detailTextLabel?.text = self.formatDate(date: trouble.createdAt)
         
         return cell
     }
     
-
+    func formatDate(date: Date?) -> String {
+        if let date = date {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        
+            return dateFormatter.string(from: date)
+        }
+        return ""
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -69,17 +77,16 @@ class TroublesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            let trouble = fetchedResultsController.object(at: indexPath)
+            context.delete(trouble)
+            try? context.save()
+        }
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

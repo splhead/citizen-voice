@@ -9,6 +9,14 @@ import UIKit
 
 class TroubleViewController: UIViewController {
     
+    @IBOutlet weak var imageViewPhoto: UIImageView!
+    
+    @IBOutlet weak var labelName: UILabel!
+    
+    @IBOutlet weak var labelAddress: UILabel!
+    
+    @IBOutlet weak var textViewDetails: UITextView!
+    
     var trouble: Trouble?
 
     override func viewDidLoad() {
@@ -28,7 +36,13 @@ class TroubleViewController: UIViewController {
     }
     
     func prepareScreen() {
+        if trouble?.image != nil {
+            imageViewPhoto.image = UIImage(data: (trouble?.image)!)
+        }
         
+        labelName.text = trouble?.name
+        labelAddress.text  = trouble?.address
+        textViewDetails.text = trouble?.details
     }
 }
 

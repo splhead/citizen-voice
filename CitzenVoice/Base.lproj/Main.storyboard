@@ -70,8 +70,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain-gb175885df_1920" translatesAutoresizingMaskIntoConstraints="NO" id="I5v-tG-pLi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="FYb-j3-DCm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rua alagando risco a vida dos cidadãos" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECe-hj-3QI" userLabel="Name">
+                                <rect key="frame" x="16" y="366" width="382" height="75"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av. Rio de Janeiro 3001, Agenor de Carvalho, Rio Branco - PR" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bx-XZ-XaF" userLabel="Address">
+                                <rect key="frame" x="16" y="449" width="382" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llR-SJ-sLF">
+                                <rect key="frame" x="16" y="505" width="382" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Rm-5M-rBA">
+                                <rect key="frame" x="16" y="530" width="382" height="312"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ECe-hj-3QI" secondAttribute="trailing" constant="16" id="1rP-cr-0po"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="llR-SJ-sLF" secondAttribute="trailing" constant="16" id="7l9-kH-LDw"/>
+                            <constraint firstItem="I5v-tG-pLi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8DE-cm-Ywx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Rm-5M-rBA" secondAttribute="trailing" constant="16" id="8hr-0z-LRc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Rm-5M-rBA" secondAttribute="bottom" constant="20" id="HSk-iH-KBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I5v-tG-pLi" secondAttribute="trailing" id="SIA-aR-EP7"/>
+                            <constraint firstItem="4Rm-5M-rBA" firstAttribute="top" secondItem="llR-SJ-sLF" secondAttribute="bottom" constant="8" id="VF8-FF-qld"/>
+                            <constraint firstItem="8bx-XZ-XaF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cES-4k-UAw"/>
+                            <constraint firstItem="ECe-hj-3QI" firstAttribute="top" secondItem="I5v-tG-pLi" secondAttribute="bottom" constant="8" id="clv-UT-IYa"/>
+                            <constraint firstItem="ECe-hj-3QI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="heB-lu-xqc"/>
+                            <constraint firstItem="8bx-XZ-XaF" firstAttribute="top" secondItem="ECe-hj-3QI" secondAttribute="bottom" constant="8" id="jCC-T3-hGf"/>
+                            <constraint firstItem="llR-SJ-sLF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nPe-6T-MkJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="I5v-tG-pLi" secondAttribute="top" id="qZ3-Hg-PZY"/>
+                            <constraint firstItem="llR-SJ-sLF" firstAttribute="top" secondItem="8bx-XZ-XaF" secondAttribute="bottom" constant="20" id="uRs-fZ-Cro"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8bx-XZ-XaF" secondAttribute="trailing" constant="16" id="x66-ws-0w9"/>
+                            <constraint firstItem="4Rm-5M-rBA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zZ9-uw-j7u"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="qEU-p4-nbT">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="c7j-NU-Km1">
@@ -80,12 +132,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageViewPhoto" destination="I5v-tG-pLi" id="y5t-Ba-MfI"/>
+                        <outlet property="labelAddress" destination="8bx-XZ-XaF" id="Aic-P2-KV8"/>
+                        <outlet property="labelName" destination="ECe-hj-3QI" id="UpG-JT-Yqb"/>
+                        <outlet property="textViewDetails" destination="4Rm-5M-rBA" id="YgF-fr-XgS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="504"/>
+            <point key="canvasLocation" x="1131.8840579710145" y="503.57142857142856"/>
         </scene>
-        <!--Novo-->
+        <!--Nova-->
         <scene sceneID="unX-BI-Xxp">
             <objects>
                 <viewController id="ovJ-oE-2V3" customClass="TroubleFormViewController" customModule="CitzenVoice" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +152,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GJH-bD-5V3">
-                                <rect key="frame" x="16" y="160" width="382" height="507.5"/>
+                                <rect key="frame" x="16" y="108" width="382" height="507.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jQj-SN-p2B">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="447.5"/>
@@ -168,7 +226,7 @@
                             <constraint firstItem="GJH-bD-5V3" firstAttribute="leading" secondItem="oPJ-SN-Y3G" secondAttribute="leading" constant="16" id="xDf-LK-rQo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Novo" id="6OC-1z-ml7"/>
+                    <navigationItem key="navigationItem" title="Nova" largeTitleDisplayMode="never" id="6OC-1z-ml7"/>
                     <connections>
                         <outlet property="buttonAction" destination="jLl-sz-ZOb" id="7ep-29-dAa"/>
                         <outlet property="imageViewPhoto" destination="eDQ-zZ-raN" id="zMz-b1-dRh"/>
@@ -201,9 +259,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MA3-Xd-fBz"/>
+        <segue reference="idm-Ol-WIe"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="rain-gb175885df_1920" width="1920" height="1280"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
