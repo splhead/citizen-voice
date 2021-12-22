@@ -26,7 +26,10 @@ class TroubleFormViewController: UIViewController {
             textFieldName.text = trouble.name
             textFieldAddress.text = trouble.address
             textViewDetails.text = trouble.details
-            imageViewPhoto.image = UIImage(data: trouble.image!) ?? nil
+            
+            if let image = trouble.image {
+                imageViewPhoto.image = UIImage(data: image)
+            }
             
             buttonAction.setTitle("Alterar", for: .normal)
         }
